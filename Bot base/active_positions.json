@@ -1,0 +1,15 @@
+{
+    "active_positions": {},
+    "risk_management": {},
+    "bot_state": {
+        "last_backup_date": "2025-11-05",
+        "circuit_breaker": {
+            "global_consecutive_losses": 0,
+            "strategy_losses": {}
+        },
+        "data_quality_failures": {
+            "SAPIENUSDT": 2
+        }
+    },
+    "cooldown_until": {}
+}

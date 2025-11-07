@@ -1,0 +1,22 @@
+# --- Núcleo y Análisis ---
+numpy==1.26.4
+pandas==2.3.3
+vectorbt==0.28.1
+
+# --- Conectividad y API ---
+python-binance==1.0.31
+redis==7.0.1
+ccxt==4.5.14
+
+# --- Utilidades ---
+python-dotenv==1.2.1
+pytz==2025.2
+filelock==3.20.0
+loguru==0.7.3
+openpyxl==3.1.5
+
+# --- Optimización y Dashboard ---
+optuna==4.5.0
+streamlit==1.51.0
+plotly==6.3.1
+
