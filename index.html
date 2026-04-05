@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Master Training v2 - Documento Unificado</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+    pre { background: #f4f4f4; padding: 15px; border: 1px solid #ccc; white-space: pre-wrap; }
+    h1 { color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Master Training v2 - Documento Unificado</h1>
+  <pre id="merged"></pre>
+
+  <script>
+    async function loadAndMerge() {
+      let fullText = "";
+      let part = 1;
+      while (true) {
+        const filename = `master_training_v2-Entrena_part${part}.txt`;
+        try {
+          const response = await fetch(filename);
+          if (!response.ok) break; // si no existe, termina el bucle
+          const text = await response.text();
+          fullText += text + "\n\n"; // agrega separación entre partes
+          part++;
+        } catch (e) {
+          break;
+        }
+      }
+      document.getElementById("merged").textContent = fullText || "No se encontraron archivos.";
+    }
+
+    loadAndMerge();
+  </script>
+</body>
+</html>
