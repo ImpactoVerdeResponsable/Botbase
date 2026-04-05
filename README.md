@@ -1,2 +1,0 @@
-# Botbase
-Bot binance base
